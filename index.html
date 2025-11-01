@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkateswaran Rajgopal - Professional Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .section-header {
+            font-weight: 700;
+            color: #1f2937;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Profile Summary -->
+    <header class="bg-gray-800 text-white py-10 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Venkateswaran Rajgopal</h1>
+            <p class="text-xl mt-2 text-blue-300">Strategic Leader | Organizational Builder | Educational Impact Fellow</p>
+            
+            <div class="mt-6">
+                <p class="text-gray-300 max-w-4xl text-lg">
+                    Strategic leader with 18+ years' experience across global markets, risk management, and sustainability ventures. Expertise in leading diverse teams, stakeholder engagement, capital planning, and executing cross-functional projects, now channeling organizational skills into high-impact education.
+                </p>
+            </div>
+
+            <div class="mt-6 flex flex-wrap gap-4 text-sm">
+                <span class="bg-blue-600 px-3 py-1 rounded-full">B.Tech (IIT Madras)</span>
+                <span class="bg-blue-600 px-3 py-1 rounded-full">PGPM (ISB Hyderabad)</span>
+                <span class="bg-blue-600 px-3 py-1 rounded-full">Teach For India Fellow</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- Column 1 & 2: Educational Impact (Wider) -->
+        <div class="lg:col-span-2">
+            <h2 class="text-3xl section-header">Educational Impact: Teach For India Fellowship (Last 2 Years)</h2>
+            <p class="text-gray-600 mb-6">Leveraging organizational leadership to foster holistic development and academic excellence in the classroom.</p>
+
+            <div class="space-y-8">
+                
+                <!-- Project 1: Holistic Development & Character -->
+                <div class="card bg-white p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Building Character and Community</h3>
+                    
+                    <!-- Media Area (Use grid for responsive layout of photos/videos) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div class="h-48 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
+                            <!-- Placeholder for Video 1 (e.g., YouTube Embed) -->
+                            <iframe 
+                                width="100%" height="100%" 
+                                src="[YOUR_YOUTUBE_EMBED_URL]" 
+                                title="Character Building Video" 
+                                frameborder="0" allowfullscreen
+                                class="object-cover"
+                            ></iframe>
+                        </div>
+                        <div class="h-48 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <!-- Placeholder for Photo 1 (e.g., Cricket Tournament photo) -->
+                            <img src="[YOUR_CRICKET_PHOTO_URL]" alt="Cricket Tournament" class="w-full h-full object-cover rounded-lg" onerror="this.src='https://placehold.co/400x300/e5e7eb/4b5563?text=Cricket+Photo'">
+                        </div>
+                    </div>
+
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>**Community Sports:** Organized an inter-school cricket tournament engaging 150+ students to instill values of teamwork, discipline, and sportsmanship.</li>
+                        <li>**Character Curriculum:** Designed and implemented a weekly character development module focused on empathy, integrity, and resilience.</li>
+                        <li>**Social Immersion:** Conducted social visits to local NGOs and heritage sites, broadening students' perspectives on civic responsibility and history.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2: Science Competitions & Mentorship -->
+                <div class="card bg-white p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mentoring for National Science Competitions</h3>
+
+                    <!-- Media Area -->
+                    <div class="h-64 bg-gray-200 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                        <!-- Placeholder for Video 2 (e.g., Science Fair project presentation) -->
+                        <img src="[YOUR_SCIENCE_COMPETITION_PHOTO_URL]" alt="Science Competition Mentorship" class="w-full h-full object-cover rounded-lg" onerror="this.src='https://placehold.co/800x400/e5e7eb/4b5563?text=Science+Mentorship+Photo'">
+                    </div>
+
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>**Innovation Pipeline:** Mentored 12 students in the national science competition process, guiding them from ideation and hypothesis to final project execution and presentation.</li>
+                        <li>**Outcome:** Achieved a top-20 finish nationally by a student group focused on low-cost water purification methods.</li>
+                        <li>**Skill Transfer:** Taught essential research and presentation skills, translating complex problem-solving abilities from the corporate world to the classroom environment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 3: Leadership and Organization Building (Narrower) -->
+        <div class="lg:col-span-1">
+            <h2 class="text-3xl section-header">Organizational Leadership & Finance</h2>
+            
+            <div class="space-y-8">
+                
+                <!-- Role 1: ReAmp Technologies -->
+                <div class="card bg-gray-50 p-6 rounded-lg border-t-4 border-blue-500">
+                    <p class="text-sm font-medium text-gray-500">2021 - Present</p>
+                    <h3 class="text-xl font-bold text-gray-800">Co-Founder & Partner, ReAmp Technologies</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mt-3 space-y-2 text-sm">
+                        <li>**Venture Founding:** Established and led a battery recycling venture focused on sustainable technology.</li>
+                        <li>**Capital & Ops:** Managed capital raising, secured regulatory approvals, and developed operational partnerships.</li>
+                        <li>**R&D Direction:** Directed R&D collaboration with IITs and led the setup of a greenfield plant.</li>
+                    </ul>
+                </div>
+                
+                <!-- Role 2: Credit Suisse -->
+                <div class="card bg-gray-50 p-6 rounded-lg border-t-4 border-blue-500">
+                    <p class="text-sm font-medium text-gray-500">2016 - 2020</p>
+                    <h3 class="text-xl font-bold text-gray-800">Director, Head of Market Risk, Credit Suisse</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mt-3 space-y-2 text-sm">
+                        <li>**Global Team Leadership:** Led a 75-member global risk team, managing $\sim\$14$bn in Risk-Weighted Assets (RWA) during periods of market stress.</li>
+                        <li>**Capital Optimization:** Drove $\sim\$2$bn in capital optimization by strategically restructuring risk-heavy portfolios.</li>
+                        <li>**Hub Development:** Successfully built the India unit into a globally recognized risk hub.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 3: Morgan Stanley -->
+                <div class="card bg-gray-50 p-6 rounded-lg border-t-4 border-blue-500">
+                    <p class="text-sm font-medium text-gray-500">2008 - 2015</p>
+                    <h3 class="text-xl font-bold text-gray-800">Vice President, Morgan Stanley</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mt-3 space-y-2 text-sm">
+                        <li>**Product Development:** Developed proprietary investment products with $\sim\$6$bn Assets Under Management (AUM).</li>
+                        <li>**Framework Innovation:** Led RWA reduction initiative, saving $\sim\$4$bn via capital-efficient frameworks.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2024 Venkateswaran Rajgopal. Built with simple HTML & Tailwind CSS.</p>
+            <div class="mt-2 space-x-4">
+                <a href="mailto:rajgopal.v@gmail.com" class="hover:text-blue-400">Email</a>
+                <span class="text-gray-500">|</span>
+                <a href="https://www.linkedin.com/in/rajgopal-venkateswaran" target="_blank" class="hover:text-blue-400">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
